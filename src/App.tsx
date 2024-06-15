@@ -40,7 +40,9 @@ function App() {
   } = useQuery({
     queryKey: ['people'],
     queryFn: getPeople,
+    staleTime: 1000,
   });
+
   const {
     data: person,
     isLoading: isLoadingPerson,
