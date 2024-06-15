@@ -40,7 +40,7 @@ function App() {
   } = useQuery({
     queryKey: ['people'],
     queryFn: getPeople,
-    staleTime: 1000,
+    staleTime: 5 * 60 * 1000,
   });
 
   const {
